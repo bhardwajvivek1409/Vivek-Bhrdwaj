@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>Colour Game</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    </head>
+    <body id="body" style="background-color: white;">
+    <h1 id="heading">COLOUR GAME</h1>
+        <div class="div">
+        <button type="button" class="button" style="cursor: pointer;" onclick="timer()">START</button>
+        <button type="button" class="button"><p id="timer">TIMER</p></button>
+    <div style="height: 5%;margin-top: 60px; width: 100%;background-color: white;text-align: center;font-size: 20px;"><p id="color_name">purple</p></div>
+            <button type="button" class="color_button" style="cursor: pointer;" onclick="color()" id="a"><p id="color0">cyan</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:brown;border-color: brown;" onclick="color()" id="b"><p id="color1">red</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:white;border-color: white;" onclick="color()" id="c"><p id="color2">blue</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:yellow;border-color: yellow;" onclick="color()" id="d"><p id="color3">pink</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:purple;border-color: purple;" onclick="color()" id="e"><p id="color4">white</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:red;border-color: red;" onclick="color()" id="f"><p id="color5">green</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:pink;border-color: pink;" onclick="color()" id="g"><p id="color6">yellow</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:cyan;border-color: cyan;" onclick="color()" id="h"><p id="color7">purple</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:green;border-color: green;" onclick="color()" id="i"><p id="color8">brown</p></button>
+        
+        
+        </div>
+        <div class="div" style="background-color: aqua;float: right;text-align: center;font-size: 50px;">
+            <p>SCORE</p>
+            <br>
+            <p id="score">0</p>
+        </div>
+        <script src="java.js"></script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+#heading{
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-family: cursive;
+    margin-top: 15px;
+}
+.div{
+    height: 25%;
+    width: 48%;
+    background-color: bisque;
+    float: left;
+    padding: 10px;
+    margin: 50px 2px;
+}
+.button{
+    margin-left: 20px;
+    text-decoration: none;
+    background-color: aquamarine;
+    height: 40px;
+    width: 45%;
+    float: left;
+    border-color: aquamarine;
+    font-size: 25px;
+    font-family: monospace;
+    letter-spacing: 2px;
+}
+.color_button{
+    margin-left: 17.5%;
+    height: 80px;
+    width: 10%;
+    text-align: center;
+    margin-top: 2.5%;
+    background-color: blue;
+    border: none;
+    text-decoration: none;
+}
