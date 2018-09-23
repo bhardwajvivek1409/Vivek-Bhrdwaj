@@ -13,14 +13,14 @@
     padding: 10px;
     margin: 50px 2px;
 }
-.button{
-    margin-left: 20px;
+.button{text-align: center;
+    margin-left: 2.5%;
     text-decoration: none;
     background-color: aquamarine;
     height: 40px;
     width: 45%;
     float: left;
-    border-color: aquamarine;
+    border:none;
     font-size: 25px;
     font-family: monospace;
     letter-spacing: 2px;

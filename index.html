@@ -14,19 +14,20 @@
     </head>
     <body id="body" style="background-color: white;">
     <h1 id="heading">COLOUR GAME</h1>
+        <p style="text-align: center; font-size: 25px;">Match color name written in the white division with the button containing same name. You have 20 seconds to do so and your time starts once you press the 'START' button.</p>
         <div class="div">
-        <button type="button" class="button" style="cursor: pointer;" onclick="timer()">START</button>
-        <button type="button" class="button"><p id="timer">TIMER</p></button>
+        <button type="button" class="button" style="cursor: pointer;" onclick="timer()" id="start">START</button>
+            <div class="button"><p id="timer">Timer</p></div>
     <div style="height: 5%;margin-top: 60px; width: 100%;background-color: white;text-align: center;font-size: 20px;"><p id="color_name">purple</p></div>
-            <button type="button" class="color_button" style="cursor: pointer;" onclick="color()" id="a"><p id="color0">cyan</p></button>
-            <button type="button" class="color_button" style="cursor: pointer;background-color:brown;border-color: brown;" onclick="color()" id="b"><p id="color1">red</p></button>
-            <button type="button" class="color_button" style="cursor: pointer;background-color:white;border-color: white;" onclick="color()" id="c"><p id="color2">blue</p></button>
-            <button type="button" class="color_button" style="cursor: pointer;background-color:yellow;border-color: yellow;" onclick="color()" id="d"><p id="color3">pink</p></button>
-            <button type="button" class="color_button" style="cursor: pointer;background-color:purple;border-color: purple;" onclick="color()" id="e"><p id="color4">white</p></button>
-            <button type="button" class="color_button" style="cursor: pointer;background-color:red;border-color: red;" onclick="color()" id="f"><p id="color5">green</p></button>
-            <button type="button" class="color_button" style="cursor: pointer;background-color:pink;border-color: pink;" onclick="color()" id="g"><p id="color6">yellow</p></button>
-            <button type="button" class="color_button" style="cursor: pointer;background-color:cyan;border-color: cyan;" onclick="color()" id="h"><p id="color7">purple</p></button>
-            <button type="button" class="color_button" style="cursor: pointer;background-color:green;border-color: green;" onclick="color()" id="i"><p id="color8">brown</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;" onclick="compare(document.getElementById('color0').innerHTML)" id="a"><p id="color0">cyan</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:brown;border-color: brown;" onclick="compare(document.getElementById('color1').innerHTML)" id="b"><p id="color1">red</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:white;border-color: white;" onclick="compare(document.getElementById('color2').innerHTML)" id="c"><p id="color2">blue</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:yellow;border-color: yellow;" onclick="compare(document.getElementById('color3').innerHTML)" id="d"><p id="color3">pink</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:purple;border-color: purple;" onclick="compare(document.getElementById('color4').innerHTML)" id="e"><p id="color4">white</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:red;border-color: red;" onclick="compare(document.getElementById('color5').innerHTML)" id="f"><p id="color5">green</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:pink;border-color: pink;" onclick="compare(document.getElementById('color6').innerHTML)" id="g"><p id="color6">yellow</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:cyan;border-color: cyan;" onclick="compare(document.getElementById('color7').innerHTML)" id="h"><p id="color7">purple</p></button>
+            <button type="button" class="color_button" style="cursor: pointer;background-color:green;border-color: green;" onclick="compare(document.getElementById('color8').innerHTML)" id="i"><p id="color8">brown</p></button>
         
         
         </div>

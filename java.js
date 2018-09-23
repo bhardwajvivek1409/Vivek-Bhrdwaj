@@ -1,13 +1,51 @@
 var color_name=["red","blue","pink","brown","yellow","cyan","white","purple","green"]
-var t=25;
+var score=0;
+var timeleft=20;
+document.getElementById("a").disabled=true;
+document.getElementById("start").disabled=false;
+document.getElementById("b").disabled=true;
+document.getElementById("c").disabled=true;
+document.getElementById("d").disabled=true;
+document.getElementById("e").disabled=true;
+document.getElementById("f").disabled=true;
+document.getElementById("g").disabled=true;
+document.getElementById("h").disabled=true;
+document.getElementById("i").disabled=true;
+
 function timer()
-{   document.getElementById("timer").innerHTML=t;
-    t--;
- if(t==-1)
-     {
-         window.alert("Game over");
-         t=25;
-     }
+{
+document.getElementById("timer").innerHTML=timeleft;
+document.getElementById("score").innerHTML=score;
+document.getElementById("start").disabled=true;
+document.getElementById("a").disabled=false;
+document.getElementById("b").disabled=false;
+document.getElementById("c").disabled=false;
+document.getElementById("d").disabled=false;
+document.getElementById("e").disabled=false;
+document.getElementById("f").disabled=false;
+document.getElementById("g").disabled=false;
+document.getElementById("h").disabled=false;
+document.getElementById("i").disabled=false;
+    var timer=setInterval(function(){
+timeleft--;
+    document.getElementById("timer").innerHTML=timeleft;
+    if(timeleft==0)
+        {   clearInterval(timer);
+            alert("GAME OVER!! Your score is " + score)
+            timeleft=20;
+            score=0;
+document.getElementById("a").disabled=true;
+document.getElementById("start").disabled=false;
+document.getElementById("b").disabled=true;
+document.getElementById("c").disabled=true;
+document.getElementById("d").disabled=true;
+document.getElementById("e").disabled=true;
+document.getElementById("f").disabled=true;
+document.getElementById("g").disabled=true;
+document.getElementById("h").disabled=true;
+document.getElementById("i").disabled=true;
+        }
+    },1000)
 }
 function color()
 {
@@ -204,4 +242,20 @@ var a=Math.floor(Math.random()*9)+1;
                 document.getElementById("i").style.background=color_name[1];
                 break;
         }
+}
+function compare(x)
+{
+    var z=x;
+    var y=document.getElementById("color_name").innerHTML;
+    if(y==z)
+        {
+            ++score;
+            document.getElementById("score").innerHTML=score;
+            document.getElementById("body").style.background="green";
+        }
+    else
+        {
+            document.getElementById("body").style.background="red";
+        }
+    color();
 }
